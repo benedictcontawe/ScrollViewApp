@@ -40,6 +40,8 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
     protected void onResume() {
         super.onResume();
         nsv_main.scrollTo(0,0);
+        fog_top.setVisibility(View.INVISIBLE);
+        fog_bottom.setVisibility(View.VISIBLE);
     }
 
     @Override
