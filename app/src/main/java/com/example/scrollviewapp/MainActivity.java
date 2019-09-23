@@ -34,6 +34,12 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
     }
 
     @Override
+    protected void onResume() {
+        super.onResume();
+        hsv_main.scrollTo(0,0);
+    }
+
+    @Override
     public boolean onTouch(View v, MotionEvent event) {
         return chck_switch.isChecked();
     }
