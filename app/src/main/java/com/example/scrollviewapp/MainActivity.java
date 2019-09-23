@@ -39,6 +39,8 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
     protected void onResume() {
         super.onResume();
         sv_main.scrollTo(0,0);
+        shadow_top.setVisibility(View.INVISIBLE);
+        shadow_bottom.setVisibility(View.VISIBLE);
     }
 
     @Override
