@@ -6,4 +6,16 @@
     <!--basic Colours-->
     <color name="white">#FFF</color>
     <color name="black">#000</color>
+    <!-- Background Colors -->
+    <color name="background_material_light">#ffffff</color>
+    <color name="background_material_blue">#0055A5</color>
+    <color name="background_material_dark_gray">#999999</color>
+    <color name="background_material_gray">#F6F6F6</color>
+    <color name="background_material_gray_transparent_opaque_70">#B3000000</color>
+    <color name="background_material_gray_transparent_opaque_55">#8C000000</color>
+    <color name="background_material_gray_transparent_opaque_40">#66000000</color>
+    <color name="background_material_gray_transparent_opaque_30">#4D000000</color>
+    <color name="background_material_gray_transparent_opaque_10">#1A000000</color>
+    <color name="background_material_gray_transparent_opaque_05">#0D000000</color>
+    <color name="background_gray_transparent">#86000000</color>
 </resources>
