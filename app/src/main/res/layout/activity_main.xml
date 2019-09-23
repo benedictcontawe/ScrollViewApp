@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
     tools:context=".MainActivity">
 
     <androidx.constraintlayout.widget.Guideline
@@ -14,6 +15,20 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.10"
         />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_95"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.95" />
 
     <androidx.appcompat.widget.AppCompatCheckBox
         android:id="@+id/chck_switch"
@@ -40,5 +55,26 @@
             android:layout_height="wrap_content"/>
 
     </ScrollView>
+
+    <View
+        android:id="@+id/view_shadow_top"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/shadow_bottom"
+        app:layout_constraintTop_toTopOf="@id/gl_10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/gl_15"
+        />
+
+    <View
+        android:id="@+id/view_shadow_bottom"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/shadow_top"
+        app:layout_constraintTop_toTopOf="@id/gl_95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/sv_main"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
