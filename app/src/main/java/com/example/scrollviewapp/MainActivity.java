@@ -37,6 +37,12 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
     }
 
     @Override
+    protected void onResume() {
+        super.onResume();
+        nsv_main.scrollTo(0,0);
+    }
+
+    @Override
     public void onScrollChanged() {
         View view = (View) nsv_main.getChildAt(nsv_main.getChildCount() - 1);
         int topDetector = nsv_main.getScrollY();
