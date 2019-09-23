@@ -1,44 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:scrollbars="vertical"
     tools:context=".MainActivity">
 
-    <android.support.constraint.Guideline
-        android:id="@+id/gl_10"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.10"
-        />
+        android:orientation="vertical">
 
-    <android.support.v7.widget.AppCompatCheckBox
-        android:id="@+id/chck_switch"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:text="Scroll View Switch"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="@id/gl_10"/>
-
-    <ScrollView
-        android:id="@+id/sv_main"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintTop_toTopOf="@id/gl_10"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent">
-
-        <WebView
-            android:id="@+id/wv_text"
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:text="Nested Scroll View"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
-    </ScrollView>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/black" />
 
-</android.support.constraint.ConstraintLayout>
+        <include
+            layout="@layout/layout_horizontal_scroller" />
+
+        <include
+            layout="@layout/layout_vertical_scroller" />
+
+        <include
+            layout="@layout/layout_horizontal_scroller" />
+
+        <include
+            layout="@layout/layout_vertical_scroller" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/black" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

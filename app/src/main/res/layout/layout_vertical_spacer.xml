@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:scrollbars="vertical">
+
+    <View
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/ripple_effect"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <View
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/ripple_effect"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <View
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/ripple_effect"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <View
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/ripple_effect"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <View
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/ripple_effect"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <View
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/ripple_effect"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <View
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/ripple_effect"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <View
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/ripple_effect"
+        android:clickable="true"/>
+
+    <View
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/ripple_effect"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <View
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/ripple_effect"
+        android:clickable="true"
+        android:focusable="true" />
+
+</LinearLayout>

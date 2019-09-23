@@ -1,16 +1,15 @@
 package com.example.scrollviewapp;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.AppCompatCheckBox;
-import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewTreeObserver;
 import android.webkit.WebView;
-import android.widget.CompoundButton;
 import android.widget.ScrollView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatCheckBox;
 
 public class MainActivity extends AppCompatActivity implements View.OnTouchListener, ViewTreeObserver.OnScrollChangedListener {
 
@@ -23,14 +22,12 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        chck_switch = (AppCompatCheckBox) findViewById(R.id.chck_switch);
-        sv_main = (ScrollView) findViewById(R.id.sv_main);
-        wv_text = (WebView) findViewById(R.id.wv_text);
+        //chck_switch = (AppCompatCheckBox) findViewById(R.id.chck_switch);
+        //sv_main = (ScrollView) findViewById(R.id.sv_main);
+        //wv_text = (WebView) findViewById(R.id.wv_text);
 
-        sv_main.setOnTouchListener(this);
-        sv_main.getViewTreeObserver().addOnScrollChangedListener(this);
-
-        wv_text.loadData(getResources().getString(R.string.lorem_ipsum),"text/html",null);
+        //sv_main.setOnTouchListener(this);
+        //sv_main.getViewTreeObserver().addOnScrollChangedListener(this);
     }
 
     @Override
