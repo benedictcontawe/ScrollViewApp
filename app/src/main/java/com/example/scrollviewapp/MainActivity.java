@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewTreeObserver;
 import android.webkit.WebView;
 import android.widget.HorizontalScrollView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatCheckBox;
@@ -53,13 +54,13 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
         int endDetector = view.getRight() -  (hsv_main.getWidth() + hsv_main.getScrollX());
 
         if(startDetector <= 0) {
-            //Toast.makeText(getBaseContext(),"Scroll View start reached",Toast.LENGTH_SHORT).show();
+            Toast.makeText(getBaseContext(),"Scroll View start reached",Toast.LENGTH_SHORT).show();
             Log.d(MainActivity.class.getSimpleName(),"Horizontal Scroll View start reached");
             shadow_start.setVisibility(View.INVISIBLE);
         }
         else if(endDetector <= 0 ) {
-            //Toast.makeText(getBaseContext(),"Scroll View bottom reached",Toast.LENGTH_SHORT).show();
-            Log.d(MainActivity.class.getSimpleName(),"Scroll View bottom reached");
+            Toast.makeText(getBaseContext(),"Scroll View end reached",Toast.LENGTH_SHORT).show();
+            Log.d(MainActivity.class.getSimpleName(),"Scroll View end reached");
             shadow_end.setVisibility(View.INVISIBLE);
         }
         else {
