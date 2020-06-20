@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
         wv_text = (WebView) findViewById(R.id.wv_text);
 
         sv_main.setOnTouchListener(this);
-        sv_main.getViewTreeObserver().addOnScrollChangedListener(this);
+
 
         wv_text.loadData(getResources().getString(R.string.lorem_ipsum),"text/html",null);
     }
@@ -39,8 +39,15 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
     protected void onResume() {
         super.onResume();
         sv_main.scrollTo(0,0);
+        sv_main.getViewTreeObserver().addOnScrollChangedListener(this);
         shadow_top.setVisibility(View.INVISIBLE);
         shadow_bottom.setVisibility(View.VISIBLE);
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        sv_main.getViewTreeObserver().removeOnScrollChangedListener(this);
     }
 
     @Override
